@@ -1,0 +1,197 @@
+h1 {
+  text-align: center;
+  background: lightblue;
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+  background: peachpuff;
+  padding: 10px;
+}
+
+
+.photo {
+  grid-area: photo;
+}
+
+.thumbnail {
+  position: relative;
+  width: 130px;
+  background: #ccc;
+  float: left;
+}
+
+img {
+  max-width: 90%;
+}
+
+#thumb_1 {
+  grid-area: t1;
+  padding: 5px;
+}
+#thumb_2 {
+  grid-area: t2;
+  padding: 5px;
+}
+#thumb_3 {
+  grid-area: t3;
+  padding: 5px;
+}
+#thumb_4 {
+  grid-area: t4;
+  padding: 5px;
+}
+#thumb_5 {
+  grid-area: t5;
+  padding: 5px;
+}
+#thumb_6 {
+  grid-area: t6;
+  padding: 5px;
+}
+
+#thumb_7 {
+  grid-area: t7;
+  padding: 5px;
+}
+
+#thumb_8 {
+  grid-area: t8;
+  padding: 5px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-template-areas:
+  "photo photo photo photo photo photo photo photo"
+  "t1 t2 t3 t4 t5 t6 t7 t8";
+  width: 800px;
+  margin: auto;
+}
+
+#thumb1 {
+  grid-area: p1;
+  padding: 5px;
+}
+
+#thumb2 {
+  grid-area: p2;
+  padding: 5px;
+}
+
+#thumb3 {
+  grid-area: p3;
+  padding: 5px;
+}
+
+#thumb4 {
+  grid-area: p4;
+  padding: 5px;
+}
+
+.gallery2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-template-areas:
+  "photo photo photo photo "
+  "p1 p2 p3 p4 ";
+  width: 500px;
+  margin: auto;
+}
+
+#slideshow {
+    margin: 20px auto;
+    position: relative;
+    width: 500px;
+    height: 360px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.accordion {
+  margin: 50px;
+}
+.accordion h3,
+.accordion p {
+  padding: 10px;
+  /* border: 1px solid black;
+  border-bottom: 0; */
+
+}
+.accordion h3:last-of-type,
+.accordion p:last-of-type {
+  /* border-bottom: 1px solid black; */
+}
+.accordion h3 a,
+.accordion p a {
+  /* display: block;
+  color: black;
+  font-weight: bold; */
+}
+
+.accordion h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.accordion p {
+  border-top: 0;
+  font-size: 15px;
+  background: #efefef;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.accordion p:last-of-type {
+  border-top: 1px solid white;
+  position: relative;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.demobox {
+  float: left;
+}
+
+.p1 {
+  width: 500px;
+  float: right;
+  background: lightblue;
+  padding: 20px;
+}
+
+ul {
+  background: pink;
+  padding: 20px;
+}
+
+.cc2 {
+  float: center;
+  width: 800px;
+}
+
+.cc3 {
+  float: right;
+  padding: 20px;
+}

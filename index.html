@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <header>
+    <h1>Jingrong's Travel Blog</h1>
+  </header>
+
+  <body>
+    <main class="gallery">
+      <div class="photo">
+        <img src="img/1.jpg" id="slide">
+      </div>
+      <div id="thumb_1" class="thumbnail"><img src="img/1.JPG" alt="1"></div>
+      <div id="thumb_2" class="thumbnail"><img src="img/2.JPG" alt="2"></div>
+      <div id="thumb_3" class="thumbnail"><img src="img/3.JPG" alt="3"></div>
+      <div id="thumb_4" class="thumbnail"><img src="img/4.jpg" alt="4"></div>
+      <div id="thumb_5" class="thumbnail"><img src="img/5.jpg" alt="5"></div>
+      <div id="thumb_6" class="thumbnail"><img src="img/6.jpg" alt="6"></div>
+      <div id="thumb_7" class="thumbnail"><img src="img/7.jpg" alt="7"></div>
+      <div id="thumb_8" class="thumbnail"><img src="img/8.JPG" alt="8"></div>
+    </main>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("#thumb_1").click(function(){
+              $("#slide").attr('src','img/1.jpg');
+          });
+          $("#thumb_2").click(function(){
+              $("#slide").attr('src','img/2.jpg');
+          });
+          $("#thumb_3").click(function(){
+              $("#slide").attr('src','img/3.jpg');
+          });
+          $("#thumb_4").click(function(){
+              $("#slide").attr('src','img/4.jpg');
+          });
+          $("#thumb_5").click(function(){
+              $("#slide").attr('src','img/5.jpg');
+          });
+          $("#thumb_6").click(function(){
+              $("#slide").attr('src','img/6.jpg');
+          });
+          $("#thumb_7").click(function(){
+              $("#slide").attr('src','img/7.jpg');
+          });
+          $("#thumb_8").click(function(){
+              $("#slide").attr('src','img/8.jpg');
+          });
+
+
+            });
+    </script>
+    <h3>I think traveling is one of the most important part of my life. Traveling helps me to release pressure, to broden my horizen, to explore new world, and to find out memorable moments. Welcome to my travel blog, let me bring you to the most beautiful places I have been to.</h3>
+    <hr>
+    <h2>1. La Jolla Cove, San Diego</h2>
+
+        <div id="slideshow">
+       <div>
+         <img src="img/sd4.JPG">
+       </div>
+       <div>
+         <img src="img/sd3.JPG">
+       </div>
+       <div>
+         <img src="img/sd1.jpg">
+       </div>
+       <div>
+         <img src="img/sd2.jpg">
+       </div>
+    </div>
+
+    <p>
+      <a href="index.html"><- back</a>
+    </p>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //hide all divs except the first
+          $("#slideshow > div:gt(0)").hide();
+
+          //next slide
+          setInterval(function() {
+            $('#slideshow > div:first')
+              .fadeOut(1000)
+              .next()
+              .fadeIn(1000)
+              .end()
+              .appendTo('#slideshow');
+
+          },  3000);
+
+            });
+    </script>
+
+        <div class="accordion">
+
+        <h3><a href="">Tip 1 - Seals Watching</a></h3>
+        <p>The best place to see seals closely! You may dicsover various postures that seals laying on the rocks. You can see them playing, jumping out of the water, and barking. It is worth to sit on the shore for a whole afternoon. </p>
+
+        <h3><a href="">Tip 2 - Enjoy the sunset</a></h3>
+        <p>They give the tourists great sopts to watch the sunset. On June, the time of sunset is 7:30 to 8:00. It will be cozy to bring a drink and have a warm talk with your lover and family.</p>
+
+        <h3><a href="">Tip 3 - Other things you can do</a></h3>
+        <p>There are also some art galleries and shops that you can walk around and get some souvenirs. For the restaurant, I highly recommend George's at The Cove which is a ocean view dinning place. It has a terrace that you can eat while enjoying the beautiful ocean view and sunset. Don't forget to reserve! </p>
+        </div>
+
+        <p>
+          <a href="index.html"><- back</a>
+        </p>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              var allPanels = $('.accordion > p').hide();
+
+              $('.accordion > h3 > a').click(function() {
+                allPanels.slideUp();
+                $(this).parent().next().slideDown();
+                return false;
+              });
+
+                });
+        </script>
+
+      <hr><h2>2. Royal Caribbean Navigator of the Sea, Miami – Bahamas</h2>
+
+      <div class="demobox">
+
+      <img src="img/IMG_1459.jpg" alt="cruise" id="cruise" width="520">
+
+       <p>
+           <button id="hidePicture">Hide Picture!</button>
+           <button id="showPicture">Show Picture!</button>
+       </p>
+       <p>
+         <a href="index.html"><- back</a>
+       </p></div>
+
+       <script type="text/javascript">
+           $(document).ready(function(){
+
+                 $( "#hidePicture" ).click(function() {
+                       $("#cruise").hide();
+                   });
+
+                   $("#showPicture").mouseup(function(){
+                       $("#cruise").show();
+                   });
+
+               });
+       </script>
+
+       <p class="p1">For people who live or visit Miami, a cruise vacation must not be missed. Last fall break me and three of my friends decided to try a cruise line that departed from Miami to Bahamas.  There were several choice such as Carnival, Royal Caribbean and Disney. Here are some tips for choosing cruise company: For people who has children with, Disney cruise line will be the best because they have Disney characters parade and firework shows on board. Carnival specializes in budget-friendly fun, offering frequent sales. Royal Caribbean is one of the largest lines sailing the ocean today, the price will be higher but it really worthy. It is a nice choice for young generations who want advanced facilities or upper-class people who want a perfect vacation experience. We chose the Royal Caribbean because the water slides and chef restaurant on board attracted me a lot. Without any doubt, it was an amazing trip. When we were on board, we could totally forgot any troubles or stress. Instead, we were just enjoying the 10 and more restaurants, laying on a sofa at the deck, and exploring various entertainment facilities. To sum up, if you want a relax vacation without planning anything, taking a cruise tour is a good idea. </p>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><h2>3. Chichen Itza, Cenote Ik Kil</h2>
+
+<p>
+<img class="cc3" src="img/cc3.jpg" alt="Robber Ducky" id="ducky" width="600">
+</p>
+<p>
+    <button id="hideDucky">Hide Picture</button>
+    <button id="showDucky">Show Picture</button>
+</p>
+<p>
+  <a href="index.html"><- back</a>
+</p>
+<!-- Your JQuery goes here, the "script" element s usually places before the /body tag -->
+<script type="text/javascript">
+    $(document).ready(function(){
+          //all js goes in here
+          //the code below adds the class chubbySquare to the demo box
+          $( "#hideDucky" ).click(function() {
+                $("#ducky").fadeOut(1000);
+            });
+            //the code below adds the class tealCircle to the demo box
+            $("#showDucky").mouseup(function(){
+                $("#ducky").fadeIn(1000);
+            });
+
+        });
+</script>
+
+<br><h3>What's interesting in Chichen Itza and Cenote Ik Kil</h3>
+  <li>Chichen Itza is a Mayan ruin city which is famous for the pyramid, known as  El Castillo or Temple of Kukulcan.</li>
+  <li>The Pyramid of Kukulkán (El Castillo) dominates the northern part of the site and was built in accordance with strict astronomical and astrological rules. Standing 30 meters high, this excellently restored four-sided pyramid impresses with its classic simplicity. Notable features include its nine-tier terracing and four stairways, one on each side, symbolizing the nine heavens and the four points of the compass.</li>
+  <li>Clap your hands at the base of the pyramid, and the song of a sacred Mayan bird will echo through the air. </li>
+  <li>Beside the pyramid, standing on a platform east of El Castillo is the Temple of the Warriors, a magnificent structure comprising several spacious columned halls that unmistakably mimic the larger version of the Temple of the Morning Star at Tula.</li>
+  <li>Adjoining the Temple of the Warriors on its south side is the Hall of the Thousand Columns, believed to have served as an indoor market or place of assembly. </li>
+  <li>Cenote Ik Kil is arguably one of the most beautiful cenotes of Mexico.</li>
+  <li>In order to reach the water you have to climb down 26 meters.The water is 40 meters deep while its diameter is 60 meters.</li>
+  <li>From there it’s either a short jump into the water, or a considerably taller dive off a platform if you feel like joining the daredevils in line.</li>
+  <li>The waters of Ik Kil were considered sacred by the Mayans who performed here human sacrificing to their rain god.</li>
+
+<p>
+  <div class="cc2">
+
+
+<img class="cc2" src="img/cc2.jpg" alt="cc2" id="cc2" width="500">
+</div>
+
+<p>
+    <button id="myButt">View Text Only</button>
+</p>
+<p>
+  <a href="index.html"><- back</a>
+</p>
+<!-- Your JQuery goes here, the "script" element s usually places before the /body tag -->
+<script type="text/javascript">
+    $(document).ready(function(){
+          //all js goes in here
+          //the code below toggles between show hide
+          $( "#myButt" ).click(function() {
+                $(".cc2").toggle(1000);
+            });
+
+        });
+</script>
+
+  </body>
+</html>
